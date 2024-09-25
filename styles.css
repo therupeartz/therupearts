@@ -239,7 +239,7 @@ footer .social-links a {
 }
 
 footer .social-links a:hover {
-    color: #FFFFFF;
+    color: #e09e00;
     transform: scale(1.2); /* Scale up on hover */
 }
 
