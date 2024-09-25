@@ -1,0 +1,290 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background-color: #0e0e0e; /* Dark background */
+    color: #e0e0e0; /* Light gray text */
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: #e0e0e0; /* Light gray for links */
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #f0a500;
+}
+
+h1,
+h2,
+h3 {
+    margin-bottom: 20px;
+    color: #f0a500; /* Gold color for headings */
+}
+
+/* Header */
+header {
+    background-color: #111; /* Dark gray */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+/* Navigation */
+nav {
+    background-color: #222;
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+}
+
+nav a {
+    margin: 0 15px;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+/* Hero Section */
+.hero {
+    background: url('https://img.freepik.com/free-vector/geometric-style-glowing-golden-line-wallpaper-with-text-space_1017-45430.jpg?t=st=1727288735~exp=1727292335~hmac=fdde3b37d19dd514e46f411ead5c59a0202c6dcf62384988244e6017ebcadb90&w=1060') no-repeat center center/cover; /* Adjust the path here */
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.7);
+}
+
+.hero h1 {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin: 20px 0;
+}
+
+.cta-button {
+    padding: 15px 30px;
+    background-color: #f0a500;
+    color: #000;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #e09e00;
+}
+
+/* Main Content */
+main {
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    border-bottom: 3px solid #f0a500;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+/* Personal Section */
+.personal-section {
+    text-align: center;
+}
+
+.profile-picture {
+    border: 5px solid #f0a500;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    margin: 20px auto;
+}
+
+.profile-picture img {
+    width: 100%;
+    height: auto;
+}
+
+.personal-data {
+    margin-top: 20px;
+    text-align: left;
+}
+
+/* Services Section */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.service-item {
+    background-color: #1b1b1b;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.service-item:hover {
+    transform: translateY(-10px);
+}
+
+/* Artworks Section */
+.artworks-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.artwork-frame {
+    width: 100%;
+    padding-top: 100%;
+    position: relative;
+    overflow: hidden;
+    border: 5px solid #f0a500;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.artwork-frame img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    filter: brightness(0.9);
+    transition: transform 0.3s ease;
+}
+
+.artwork-frame:hover img {
+    transform: scale(1.1) translate(-50%, -50%);
+}
+
+/* Testimonials Section */
+.testimonial-item {
+    background-color: #1b1b1b;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.testimonial-item p {
+    font-style: italic;
+    color: #ccc;
+}
+
+.testimonial-item span {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #f0a500;
+}
+
+/* Footer */
+footer {
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer .social-links {
+    margin: 10px 0;
+}
+
+footer .social-links a {
+    margin: 0 10px;
+    font-size: 1.5rem;
+    color: #f0a500;
+    transition: color 0.3s ease, transform 0.3s ease; /* Added transition for transform */
+}
+
+footer .social-links a:hover {
+    color: #e09e00;
+    transform: scale(1.2); /* Scale up on hover */
+}
+
+/* Contact Form */
+.contact-form {
+    background-color: #1b1b1b;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+iframe {
+    width: 100%;
+    height: 800px;
+    border: none;
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Animation for elements */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+section {
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+}
+
+section:nth-child(2) {
+    animation-delay: 0.3s;
+}
+
+section:nth-child(3) {
+    animation-delay: 0.6s;
+}
