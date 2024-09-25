@@ -234,12 +234,12 @@ footer .social-links {
 footer .social-links a {
     margin: 0 10px;
     font-size: 1.5rem;
-    color: #FFFFFF;
+    color: #e09e00;
     transition: color 0.3s ease, transform 0.3s ease; /* Added transition for transform */
 }
 
 footer .social-links a:hover {
-    color: #e09e00;
+    color: #FFFFFF;
     transform: scale(1.2); /* Scale up on hover */
 }
 
