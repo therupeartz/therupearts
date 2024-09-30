@@ -1,4 +1,4 @@
-- 👋 Hi, I’m @therupeartz
+- 👋 Hi, I’m Dimuthu Rupasinghe aka the rupe
 - 👀 I’m interested in web designing and graphic designing
 - 🌱 I’m currently learning html,css and java.
 - 💞️ I’m looking to collaborate on web designing.
